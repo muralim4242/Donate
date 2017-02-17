@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-class HeaderRight extends Component {
+class Footer extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
+
       </div>
     );
   }
 }
-export default HeaderRight;
+export default Footer;
