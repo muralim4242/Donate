@@ -4,6 +4,8 @@ class Footer extends Component {
     return (
       <div className="App">
 
+<h1>Footer Working </h1>
+
       </div>
     );
   }
