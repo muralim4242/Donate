@@ -1,27 +1,21 @@
 import React, { Component } from 'react';
 import '../../styles/App.css';
+import Login from '../../components/Login';
 
 
 class HeaderRight extends Component {
 
   render() {
-    return (
+    return (  <div className="App">
 
-      <nav className="navbar navbar-inverse">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <a className="navbar-brand" href="#">Blood Donation</a>
-          </div>
-          <ul className="nav navbar-nav">
-            <li className="active"><a href="#">Home</a></li>
-  </ul>
-    <ul className="nav navbar-nav navbar-right">
-    <li><a href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-    <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
-  </ul>
-          </div>
-      </nav>
-
+        <ul className="nav navbar-nav navbar-right">
+        <li><a href="#"><span className="glyphicon"></span>BLOG</a></li>
+        <li><a href="#"><span className="glyphicon glyphicon-user"></span>CONTACT</a></li>
+        <li><a href="#"><span className="glyphicon glyphicon-user"></span>SIGN UP</a></li>
+        <li><a link={Login}><span className="glyphicon glyphicon-user"></span>LOGIN</a></li>
+        </ul>
+        {this.props.children}
+        </div>
     );
   }
 }
