@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import {Link} from "react-router";
 class HeaderLeft extends Component {
   render() {
     return (
       <div className="navbar-header">
-        <a className="navbar-brand" href="#">Blood Donation</a>
-
+      <Link  className="navbar-brand" to="/">Blood Donation</Link>
       <ul className="nav navbar-nav">
         <li className="active"><a href="#">Bangalore</a></li>
 </ul>

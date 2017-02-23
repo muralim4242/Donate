@@ -3,8 +3,7 @@ import HeaderRight from './HeaderRight';
 import HeaderLeft from './HeaderLeft';
 class Header extends Component {
   render() {
-    return (
-      <div className="App">
+    return (<div>
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
 
@@ -12,7 +11,6 @@ class Header extends Component {
         <HeaderLeft/>
           </div>
       </nav>
-
       </div>
     );
   }
